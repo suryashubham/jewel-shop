@@ -1,0 +1,15 @@
+Todo:
+
+1. for signup service setup
+- logger
+- database
+- MVC setup
+- Dockerfile
+- docker-compsoe for project
+
+
+
+
+To learn more about:
+- npx
+- end of line concept for different os
