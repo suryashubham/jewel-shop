@@ -6,6 +6,7 @@ Todo:
 - MVC setup
 - Dockerfile
 - docker-compsoe for project
+- define workflow for github action
 
 
 
