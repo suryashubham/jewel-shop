@@ -1,7 +1,7 @@
 Todo:
 
 1. for signup service setup
-- logger
+- logger --> Winston library
 - database
 - MVC setup
 - Dockerfile
