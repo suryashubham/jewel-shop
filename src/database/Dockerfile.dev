@@ -1,0 +1,9 @@
+FROM postgres:latest
+
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# Set environment variables (optional)
+ENV POSTGRES_USER=root
+ENV POSTGRES_PASSWORD=root
+
+EXPOSE 5432

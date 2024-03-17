@@ -20,3 +20,6 @@
 
 In production system the logging should be in the file, in case of error, email should be triggered to the responsible.
 In loacl/dev setup logging should be on the console.
+
+## DB
+- DB name should be in lower snake_case

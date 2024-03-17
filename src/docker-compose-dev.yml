@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  signup:
+    container_name: signup-service
+    build: ./backend/signup
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+    volumes:
+      - ./backend/signup:/app/src
+    networks:
+      - backend-network
+  db:
+    build:
+      context: ./database
+      dockerfile: Dockerfile.dev
+    container_name: postgres-db
+    volumes:
+      - "./database/data:/app/db"
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+networks:
+  backend-network:
+    driver: bridge

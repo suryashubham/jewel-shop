@@ -4,10 +4,8 @@ Todo:
 - logger --> Winston library -- Done
 - add dockerfile to signip service --Done
 - write docker-compose file -- Done
-- database
-- MVC setup
-- Dockerfile
-- docker-compsoe for project
+- database -- Done
+- MVC setup --Done
 - define workflow for github action
 
 
@@ -17,3 +15,10 @@ To learn more about:
 
 
 few linitng rules are commented:(17-03-2024):Look into significance of those rules.
+
+## DB config
+
+- add db service 
+    - add dockerfile under db folder
+    - add rule in docker-compose file
+    - init.db script for creating db while running service
