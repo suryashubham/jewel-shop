@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  signup:
+    container_name: signup-service
+    build: ./backend/signup
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend/signup:/app/src
+    networks:
+      - backend-network
+networks:
+  backend-network:
+    driver: bridge

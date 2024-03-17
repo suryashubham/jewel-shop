@@ -1,7 +1,9 @@
 Todo:
 
 1. for signup service setup
-- logger --> Winston library
+- logger --> Winston library -- Done
+- add dockerfile to signip service --Done
+- write docker-compose file -- Done
 - database
 - MVC setup
 - Dockerfile
