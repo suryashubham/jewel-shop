@@ -9,8 +9,9 @@ Todo:
 - define workflow for github action
 
 
-
-
 To learn more about:
 - npx
 - end of line concept for different os
+
+
+few linitng rules are commented:(17-03-2024):Look into significance of those rules.

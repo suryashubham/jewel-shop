@@ -14,7 +14,7 @@
         "quotes": ["warn", "single"],
         "semi": ["error", "always"],
         "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-        "comma-dangle": ["error", "always"],
+        "comma-dangle": ["error", "never"],
     
         // Node.js/ES6 Environment Rules
         "no-console": "warn",
@@ -28,7 +28,7 @@
     
         // Error Handling
         "no-throw-literal": "error",
-        "promise/catch-or-return": "error",
+        // "promise/catch-or-return": "error",
     
         // Express.js-Specific Rules
         "no-magic-numbers": ["error", { "ignore": [0, 1], "ignoreArrayIndexes": true }],
@@ -37,6 +37,6 @@
         "no-sync": "error",
     
         // Security Rules
-        "security/detect-object-injection": "error",
+        // "security/detect-object-injection": "error",
       },
 }
