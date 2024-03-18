@@ -1,6 +1,6 @@
 Todo:
 
-1. for signup service setup
+1. for user service setup
 ---------------------BASIC----------------------------------
 - logger --> Winston library -- Done
 - add dockerfile to signip service --Done
@@ -46,3 +46,4 @@ commands:
 - docker-compose -f .\docker-compose-dev.yml build --no-cache  
 - sequelize model:generate --name customer --attributes username:string,email:string,
 - sequelize model:generate --name Customer --attributes "id:integer,username:string,dob:date,address:string,email:string,mobile:string,pin:string(6)"
+- npx sequelize-cli db:migrate 

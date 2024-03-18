@@ -1,15 +1,15 @@
 version: '3'
 
 services:
-  signup:
-    container_name: signup-service
-    build: ./backend/signup
+  user:
+    container_name: user-service
+    build: ./backend/user
     ports:
       - "3001:3001"
     depends_on:
       - postgres
     volumes:
-      - ./backend/signup:/app/src
+      - ./backend/user:/app/src
     networks:
       - backend-network
   postgres:

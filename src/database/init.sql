@@ -1,4 +1,4 @@
-CREATE DATABASE customer_data;
+CREATE DATABASE user_data;
 
 -- Switch to the test database
-\c customer_data;
+\c user_data;
