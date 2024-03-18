@@ -6,7 +6,7 @@
 
 | Service Name          | Database Name        |
 |-----------------------|----------------------|
-| Signup service        | customers_db         |
+| User service        | customers_db         |
 | Inventory service     | inventory_db         |
 | Auth service          | customers_db         |
 | Search Service        | product_db           |
