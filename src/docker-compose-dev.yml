@@ -7,19 +7,23 @@ services:
     ports:
       - "3001:3001"
     depends_on:
-      - db
+      - postgres
     volumes:
       - ./backend/signup:/app/src
     networks:
       - backend-network
-  db:
+  postgres:
     build:
       context: ./database
       dockerfile: Dockerfile.dev
-    container_name: postgres-db
+    container_name: postgres
     volumes:
       - "./database/data:/app/db"
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - backend-network
+    ports:
+      - "5432:5432"
 networks:
   backend-network:
     driver: bridge

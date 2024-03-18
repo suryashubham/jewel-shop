@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "customer_data",
+    "host": "postgres",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "customer_data",
+    "host": "",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": "",
+    "database": "customer_data",
+    "host": "",
+    "dialect": "postgres"
+  }
+}

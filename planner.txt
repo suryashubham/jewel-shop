@@ -1,24 +1,48 @@
 Todo:
 
 1. for signup service setup
+---------------------BASIC----------------------------------
 - logger --> Winston library -- Done
 - add dockerfile to signip service --Done
 - write docker-compose file -- Done
 - database -- Done
 - MVC setup --Done
+----------------------INTERMEDIATE----------------------------
+- Integrate ORM with service
+- Implement the controller, repo, layers
+----------------------HIGH------------------------------------
 - define workflow for github action
+- cache Implementation
+-------------------------------------------------------------
 
+- craete a second service
+- Implement API gateway
+- Interservice communication test
+
+------------------------SCALE----------------------------------
+- KUBERNETES Implementation
+
+
+## DB config
+
+- add db service  -- Done
+    - add dockerfile under db folder
+    - add rule in docker-compose file
+    - init.db script for creating db while running service
 
 To learn more about:
 - npx
 - end of line concept for different os
 
+## Points to see.
 
-few linitng rules are commented:(17-03-2024):Look into significance of those rules.
+1. few linitng rules are commented:(17-03-2024):Look into significance of those rules.
+2. NODE_ENV concept, how postgres is taking develop env by default during init, migration and all?
 
-## DB config
+## Scratch pad
 
-- add db service 
-    - add dockerfile under db folder
-    - add rule in docker-compose file
-    - init.db script for creating db while running service
+commands:
+- psql -U root -d customer_data
+- docker-compose -f .\docker-compose-dev.yml build --no-cache  
+- sequelize model:generate --name customer --attributes username:string,email:string,
+- sequelize model:generate --name Customer --attributes "id:integer,username:string,dob:date,address:string,email:string,mobile:string,pin:string(6)"
