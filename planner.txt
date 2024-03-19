@@ -42,8 +42,17 @@ To learn more about:
 ## Scratch pad
 
 commands:
-- psql -U root -d customer_data
+- psql -U root -d user_data
 - docker-compose -f .\docker-compose-dev.yml build --no-cache  
 - sequelize model:generate --name customer --attributes username:string,email:string,
 - sequelize model:generate --name Customer --attributes "id:integer,username:string,dob:date,address:string,email:string,mobile:string,pin:string(6)"
 - npx sequelize-cli db:migrate 
+- 
+
+
+see express router working
+middlewares
+validators
+
+
+## How to persist the db data if some model changes we need to apply?

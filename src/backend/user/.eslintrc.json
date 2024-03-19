@@ -38,5 +38,5 @@
     
         // Security Rules
         // "security/detect-object-injection": "error",
-      },
+      }
 }
