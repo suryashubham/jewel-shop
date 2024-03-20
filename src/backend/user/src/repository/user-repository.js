@@ -9,7 +9,7 @@ class UserRepository {
             return user;
         } catch (error) {
             logger.error('Something went wrong at repository layer while creating user');
-            if(error["name"] == "SequelizeValidationError"){
+            if(error.name == "SequelizeValidationError"){
                 throw new ValidationError(error);
             }
             throw error;

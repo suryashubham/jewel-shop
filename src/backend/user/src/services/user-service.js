@@ -11,7 +11,6 @@ class UserService {
             let user = await this.userRepository.create(data);
             return user;
         } catch (error) {
-            logger.error("something went wrong at service layer while creating user");
             throw error;
         }
     }

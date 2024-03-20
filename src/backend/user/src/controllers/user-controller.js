@@ -1,16 +1,16 @@
+const { Logger, log } = require("winston");
 const logger = require("../logger");
 const UserService = require("../services/user-service");
 
 const userService = new UserService();
 
 const create = async (req, res) => {
-    console.log(req.body);
     try {
-        const response = userService.createNewUser({
+        const response = await userService.createNewUser({
             username: req.body.username,
-            password: req.body.password,
-            mobile: req.body.mobile
-        })
+            mobile: req.body.mobile,
+            password: req.body.password
+        });
         return res.status(201).json({
             success: true,
             message: 'Successfully created a new user',
@@ -18,12 +18,11 @@ const create = async (req, res) => {
             err: {}
         });
     } catch (error) {
-        logger.error(error)
         return res.status(500).json({
-            success: false,
-            message: 'Unable to create the user, somthing went wrong in controller layer',
+            message: error.message,
             data: {},
-            err: {}
+            success: false,
+            err: error.explanations,
         });
     }
 }

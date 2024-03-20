@@ -5,8 +5,6 @@ const { PORT } = require('./config/serverConfig')
 const apiRoutes = require('./routes/index');
 const bodyParser = require('body-parser');
 
-const apiRoutes = require('./routes/index');
-
 const prepareAndStartServer = () => {
     app.listen(PORT, () => {
         app.use(bodyParser.json());
